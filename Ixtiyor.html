@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diyorjon</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style-type: none;
+        font-family: sans-serif;
+      }
+      header {
+        background-color: rgba(135, 135, 135, 0.619);
+        display: flex;
+        align-items: center;
+        padding: 0 8%;
+        justify-content: space-between;
+        box-shadow: 0 5px 10px;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+      header a {
+        color: #fff;
+      }
+      header nav ul li {
+        float: left;
+      }
+      header nav ul li:hover {
+        background-color: brown;
+        border-left: 2px solid cyan;
+        border-right: 2px solid cyan;
+      }
+      header > a {
+        font-size: 30px;
+        transition: 0.2s ease;
+      }
+      header > a:hover {
+        font-size: 35px;
+      }
+      header nav ul li a {
+        display: block;
+        padding: 20px;
+        text-transform: uppercase;
+      }
+      main {
+        margin-top: 100px;
+      }
+      footer {
+        background-color: rgba(135, 135, 135, 0.619);
+        display: flex;
+        align-items: center;
+        padding: 0 8%;
+        justify-content: space-between;
+        box-shadow: 0 5px 10px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      footer a {
+        color: #fff;
+      }
+      footer nav ul li a {
+        display: flex;
+        padding: 5px;
+        text-transform: uppercase;
+      }
+      footer nav ul li:hover {
+        background-color: mediumblue;
+        border-left: 2px solid cyan;
+        border-right: 2px solid cyan;
+      }
+      .social i {
+        font-size: 25px;
+        padding: 15px;
+      }
+      .social a:nth-child(1) i:hover {
+        color: red;
+      }
+      .social a:nth-child(2) i:hover {
+        color: blue;
+      }
+      .social a:nth-child(3) i:hover {
+        color: red;
+      }
+      .social a:nth-child(4) i:hover {
+        color: deepskyblue;
+      }
+      .rightmenu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 300px;
+        background-color: white;
+        height: 100%;
+        z-index: 999;
+        padding: 15px;
+        transform: translateY(100%);
+        transition: 1s ease-in-out;
+      }
+      .rightmenu.active {
+        transform: translateY(0);
+      }
+      .close-btn i {
+        color: black;
+        font-size: 30px;
+        position: absolute;
+        right: 10px;
+      }
+      .menu-btn {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rightmenu">
+      <div class="close-btn" ; onclick="hideMenu()">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <ul>
+        <li><a href="selfstudy.html">Asosiy</a></li>
+        <li><a href="TKT.html">TKT</a></li>
+        <li><a href="DIRIF.html">DIRIF</a></li>
+        <li><a href="KIF.html">KIF</a></li>
+      </ul>
+    </div>
+    <header>
+      <a href="#">LOGO</a>
+      <nav>
+        <ul>
+          <li><a href="selfstudy.html">Asosiy</a></li>
+          <li><a href="TKT.html">TKT</a></li>
+          <li><a href="DIRIF.html">DIRIF</a></li>
+          <li><a href="KIF.html">KIF</a></li>
+        </ul>
+      </nav>
+      <div class="menu-btn" ; onclick="showMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+    <main>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum
+        hic, alias ipsa ipsam suscipit. Consequuntur, amet recusandae nulla
+        dolore eos voluptatum numquam animi esse suscipit veniam ex voluptates
+        quasi. Enim quas est numquam iusto modi et, nam, qui ad fugiat,
+        molestias cumque. Facilis eligendi enim placeat, consequatur vero,
+        reiciendis sit repudiandae officia assumenda quas, ratione hic facere
+        consequuntur accusamus. Dolorum, voluptatum iure velit est, ea dolorem
+        modi explicabo consequatur fugiat quam ut doloremque sunt consectetur
+        cum perspiciatis rerum commodi sed dolores, error deleniti ducimus ipsum
+        distinctio hic ipsa. Consequuntur. Animi error tempore perspiciatis nisi
+        aliquam eos odit, autem quos porro quis soluta eveniet aut delectus
+        debitis illo est sapiente explicabo unde neque maiores ullam
+        voluptatibus sint labore? Fugiat, dolorem! Eius nobis nisi maiores
+        expedita odio, cupiditate quas ratione nam minima esse, pariatur nihil
+        corrupti tempora, similique voluptate deleniti blanditiis sit. Beatae
+        aperiam maiores incidunt asperiores ipsam adipisci aspernatur
+        recusandae?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Totam autem itaque earum. Sunt, nihil consequuntur autem necessitatibus
+        aspernatur ipsa maxime ullam repellendus laboriosam possimus ut, eius
+        reiciendis nobis optio temporibus! Adipisci ullam nulla corporis quis
+        ratione assumenda rerum voluptatibus, voluptatem dolores dignissimos
+        necessitatibus quam labore et iusto dolorem ipsa omnis soluta magni
+        atque inventore aperiam, animi debitis pariatur veritatis? Repellat!
+        Laudantium nulla voluptatem, ea quaerat tempore officiis? Eius, alias.
+        In maxime ea voluptatibus architecto! Dignissimos temporibus, vel fugit
+        velit perspiciatis deserunt maiores nostrum maxime sed obcaecati! Odit
+        sit nisi dolor! In unde nam iste molestias! Unde debitis cum dolore
+        ratione exercitationem, beatae quo iure tempora pariatur eligendi hic
+        atque earum quis. Dicta velit veniam ducimus vel commodi ipsam similique
+        eligendi. Libero laborum maxime beatae inventore! Nulla nemo suscipit,
+        consequuntur dolorum assumenda quas et cum earum voluptatum. Praesentium
+        nostrum sapiente soluta provident voluptatibus? In, accusantium debitis!
+        Quasi ratione et impedit quo. Soluta voluptatibus autem veniam quam?
+        Deserunt voluptate ea autem soluta, eaque alias doloribus quas suscipit
+        reiciendis, consequuntur incidunt. Perspiciatis facilis est recusandae
+        nesciunt unde commodi laudantium ipsum vero eligendi a? Molestias quis
+        quae eaque optio ullam consequuntur id omnis aspernatur. Dolor eius esse
+        nulla magni, ab distinctio minus sapiente nisi libero corrupti facilis
+        quo delectus suscipit. Magnam maxime veniam voluptate! Beatae officiis
+        quae accusantium a ipsam quod voluptates quis nostrum! Repellat quam
+        nobis eveniet eligendi unde dicta voluptatem? Ab at nihil aspernatur
+        pariatur totam ratione iure necessitatibus fugit adipisci ipsum!
+        Voluptatem quas ducimus dolore expedita vero, culpa vel. Ipsa deserunt
+        est quasi consequuntur fuga incidunt nisi aspernatur cupiditate! Optio
+        corporis distinctio incidunt sit, facilis est id aperiam tempore rerum
+        cumque! Error numquam, voluptates nulla adipisci temporibus voluptatem
+        ipsam delectus voluptas illum deleniti, corrupti doloribus? Numquam
+        repellat impedit eveniet eum vel officiis, ea distinctio nesciunt, vitae
+        molestiae voluptatibus dignissimos, quis rem! Doloribus fugit nulla
+        corporis aliquid! Unde, vel a? Magni ipsam tenetur quae itaque quam
+        excepturi distinctio deleniti? Repellendus quos totam cumque cupiditate
+        doloremque illum placeat quas hic? Dicta, rerum minima. Dicta, vero ab
+        voluptatum dolore dolor sunt ipsa repudiandae esse molestiae voluptas
+        itaque mollitia sit sapiente aut doloribus. Autem est quis nihil
+        inventore ipsum recusandae quisquam tenetur iusto corrupti obcaecati?
+        Ratione vero quos impedit, doloribus deleniti natus tempore autem minus
+        libero, quae veritatis omnis eligendi aliquam. Sequi corrupti commodi
+        cupiditate numquam recusandae ab unde odit aliquam quidem voluptatum,
+        nulla quam? Perferendis tempora dolore neque quia omnis hic possimus
+        iste! Voluptatibus dolorem doloremque aperiam nostrum vel velit tempore,
+        voluptates quibusdam repudiandae ducimus magnam laboriosam! Accusantium
+        numquam aperiam harum quae quibusdam eveniet! Voluptas repudiandae
+        possimus voluptate, omnis, mollitia dolorem deleniti eos vero provident
+        commodi in architecto debitis maiores sapiente! Ratione, ullam!
+        Excepturi facilis ipsam quae hic, ducimus ab nostrum veritatis fuga
+        beatae.
+      </p>
+    </main>
+    <footer>
+      <a href="#">LOGO</a>
+      <nav>
+        <ul>
+          <li><a href="selfstudy.html">Asosiy</a></li>
+          <li><a href="TKT.html">TKT</a></li>
+          <li><a href="DIRIF.html">DIRIF</a></li>
+          <li><a href="KIF.html">KIF</a></li>
+        </ul>
+      </nav>
+      <div class="social">
+        <a href="https://www.youtube.com/@tatuffrasmiy"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a href="https://www.facebook.com/tatuffrasmiy"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/tatuffrasmiy"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+        <a href="https://t.me/tatuffrasmiy"
+          ><i class="fa-brands fa-telegram"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .querySelector(".menu-btn")
+        .addEventListener("click", function () {
+          document.querySelector(".rightmenu").classList.add("active");
+        });
+      document
+        .querySelector(".close-btn")
+        .addEventListener("click", function () {
+          document.querySelector(".rightmenu").classList.remove("active");
+        });
+    </script>
+  </body>
+</html>
